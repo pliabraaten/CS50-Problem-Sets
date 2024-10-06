@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Stock Lookup
+{% endblock %}
+
+{% block main %}
+    <body>
+        <h1>{{ symbol }}</h1>
+        <h2>{{ usd(price) }}</h2>
+    </body>
+{% endblock %}

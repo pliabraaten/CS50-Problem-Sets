@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio Index
+{% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+            <th>Stock</th>
+            <th>Number of Shares</th>
+            <th>Stock Price</th>
+            <th>Current Value</th>
+
+        </thead>
+    <tbody>
+        {% for row in data %}
+        <tr>
+            <td>{{  row.stock  }}</td>
+            <td>{{  row.shares  }}</td>
+            <td>{{  price[row.stock] | usd }}</td>
+            <td>{{  value[row.stock] | usd }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+    <h1>Cash Balance</h1>
+    <h2>{{  cash_balance | usd  }}</h2>
+    <h1>Grand Total</h1>
+    <h2>{{  grand_total | usd  }}</h2>
+{% endblock %}

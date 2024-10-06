@@ -1,0 +1,9 @@
+AVG(energy)= 0.65906
+AVG(danceability) = 0.71646
+AVG(valence) = 0.484443
+
+Based on these calculations, the aura is not super happy but still danceable. I would characterize the audio aura as reflective and emotional.
+
+I calculated the aura based on averages of energy, danceability, and valence across the 100 songs; however, any outliers in this list could very much skew the result.
+For instance, if the listener had only a few songs with the highest value in one of these areas, it could misrepresent what the listener listened to the majority of the time.
+A better way to calculate this is by using median values instead of averages.

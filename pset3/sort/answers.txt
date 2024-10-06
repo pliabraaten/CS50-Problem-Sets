@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: The worst case (reversed50000.txt) is much slower than the best case (sorted50000.txt)
+
+sort2 uses: Merge Sort
+
+How do you know?: The worst case (reversed50000.txt) is the same speed as the best case (sorted50000.txt) and is the fastest sort
+
+sort3 uses: Selection Sort
+
+How do you know?: The worst case (reversed50000.txt) is the same speed as the best case (sorted50000.txt) and much slower speed with larger input sizes

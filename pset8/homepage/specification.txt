@@ -1,0 +1,22 @@
+// list the 10 HTML tags and 5 CSS properties you’ve used, as well as a brief (one-sentence) description of how you chose to use JavaScript and Bootstrap
+
+HTML Tags
+1. <h1>
+2. <a>
+3. <button>
+4. <div>
+5. <ul>
+6. <li>
+7. <p>
+8. <table>
+9. <tr>
+10. <th>
+
+CSS Properties
+1. background-color
+2. text-align
+3. margin-right
+4. font-weight
+5. line-height
+
+I used JavaScript to give feedback on a quiz about the information found on the different html pages, and I used Bootstraps formatting for tables for one page displaying information. 

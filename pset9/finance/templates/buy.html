@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy Stocks
+{% endblock %}
+
+{% block main %}
+<div id="buy-section">
+    <form action="/buy" method="POST">
+        <input autocomplete="on" autofocus class="form-control mx-auto w-auto" name="symbol" placeholder="Stock Symbol (Ticker)" type="text" required>
+        <input autocomplete="on" class="form-control mx-auto w-auto" name="shares" placeholder="Share Amount" type="text" required>
+        <button class="btn btn-primary" type="submit" name="action" value="buy">Buy Stock</button>
+    </form>
+</div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var lookupSuccess = {{ lookup_success | tojson }};
+            if (lookupSuccess) {
+                document.querySelector('input[name="shares"]').classList.remove('hidden');
+            }
+        });
+    </script>
+{% endblock %}
